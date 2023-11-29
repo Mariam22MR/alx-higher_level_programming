@@ -4,4 +4,3 @@ for n in range(25, -1, -1):
     if n % 2 == 1:
         c += 32
     print('{:c}'.format(c), end='')
-
