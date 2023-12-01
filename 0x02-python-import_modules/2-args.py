@@ -1,6 +1,6 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 
-if __nameoffile__ == '__main__':
+if __name__ == '__main__':
     import sys
     c = len(sys.argv) - 1
     if c == 0:
