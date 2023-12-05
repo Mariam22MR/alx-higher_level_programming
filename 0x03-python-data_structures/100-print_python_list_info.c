@@ -1,6 +1,6 @@
 #include <python.h>
 
-void print_python_list_info(PyObject *p);
+void print_python_list_info(PyObject *p)
 {
 	int size, alloc, x;
 	 PyObject *obj;
