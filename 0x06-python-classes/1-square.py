@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Difnes square."""
+"""Difnes class square."""
 
 
 class Square:
