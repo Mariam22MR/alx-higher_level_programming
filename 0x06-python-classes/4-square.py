@@ -18,8 +18,8 @@ class Square:
          Raise:
             TypeError: if size not square
             ValueError: if size less then 0.
-            """
-            return self.__size
+        """
+        return self.__size
 
     @size.setter
     def size(self, value):
