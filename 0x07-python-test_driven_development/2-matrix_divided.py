@@ -5,17 +5,17 @@ script that defines function for matrix division.
 
 
 def matrix_divided(matrix, div):
-    """Divides all elements of matrix by div.
+    """Divides elements of matrix.
     Args:
-        matrix: List of lists containing int or float
-        div: number to divide matrix by
-    Returns:
-        list: List of lists representing divided matrix.
+        matrix: list of lists of int or float.
+        div: number to divides matrix.
     Raises:
-        TypeError: If matrix is not list of lists containing int or float.
-        TypeError: If sublists are not all same size.
-        TypeError: If div is not int or float.
-        ZeroDivisionError: If div is zero.
+        TypeError: if matrix is not list of lists containing int or float.
+        TypeError: if sublists are different sizes.
+        TypeError: if div is not int or float.
+        ZeroDivisionError: if div is 0.
+    Returns:
+        new matrix representing result of division.
     """
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
