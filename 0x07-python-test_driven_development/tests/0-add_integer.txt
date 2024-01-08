@@ -1,3 +1,4 @@
+
 ===========================
 How to Use 0-add_integer.py
 ===========================
@@ -45,7 +46,7 @@ Floating and non-floating point values can be combined.
 ::
 
     >>> add_integer(7.3, -2)
-    -5
+    5
 
 The second argument is optional - by default, it is 98.
 
