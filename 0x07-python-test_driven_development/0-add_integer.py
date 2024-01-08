@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-script that define function for int add.
-"""
+"""script that define function for int add."""
 
 
 def add_integer(a, b=98):
