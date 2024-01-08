@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""script that define function for int add."""
+"""Script that define function for int add."""
 
 
 def add_integer(a, b=98):
@@ -23,5 +23,4 @@ def add_integer(a, b=98):
     return int(a) + int(b)
 
 if __name__ == "__main__":
-    import doctest
     doctest.testfile("tests/0-add_integer.txt")
