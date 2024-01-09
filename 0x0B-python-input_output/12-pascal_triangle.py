@@ -4,7 +4,8 @@
 
 def pascal_triangle(n):
     """represent pascal's triangle.
-    return list of lists of ints representing triangle.
+
+    Returns  list of lists of integers representing triangle.
     """
     if n <= 0:
         return []
