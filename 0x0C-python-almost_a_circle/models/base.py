@@ -10,11 +10,7 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """This initialize new Base.
-
-        Args:
-            id (int): identity of new Base.
-        """
+        """This initialize new Bases."""
         if id is not None:
             self.id = id
         else:
@@ -23,11 +19,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """Return JSON serialization of list of dicts.
-
-        Args:
-            list_dictionaries (list): list of dictionaries.
-        """
+        """Return JSON serialization of list of dicts."""
         if list_dictionaries is None or not list_dictionaries:
             return "[]"
         else:
