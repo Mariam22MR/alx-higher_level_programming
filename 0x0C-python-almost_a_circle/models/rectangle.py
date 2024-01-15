@@ -7,15 +7,7 @@ class Rectangle(Base):
     """represents rectangle."""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Initialize a new Rectangle.
-
-        Args:
-            id (int): identity of new Rectangle.
-            width (int): width of new Rectangle.
-            height (int): height of new Rectangle.
-            x (int): x coordinate of new Rectangle.
-            y (int): y coordinate of new Rectangl.
-        """
+        """Initialize a new Rectangle."""
         super().__init__(id)
         self.width = width
         self.height = height
