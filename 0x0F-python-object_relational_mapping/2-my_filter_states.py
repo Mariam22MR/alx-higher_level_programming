@@ -1,0 +1,22 @@
+#!/usr/bin/python3
+"""Print all row in state table of database with name matches given argument"""
+import MySQLdb
+from sys import argv
+
+
+def main():
+    """ Fanctio not run when imported module """
+    db = MySQLdb.connect(host="localhost", user=argv[1], port=3306,
+                         passwd=argv[2], db=argv[3])
+    start = db.cursor()
+    start.execute("SELECT * FROM states WHERE states.name LIKE BINARY '{}'\
+                  ORDER BY states.id".format(argv[4]))
+    rows = start.fetchall()
+    for row in rows:
+        print(row)
+    start.close()
+    db.close()
+
+
+if __name__ == "__main__":
+    main()
